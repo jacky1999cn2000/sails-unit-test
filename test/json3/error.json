@@ -1,0 +1,13 @@
+{
+   "response":{
+      "error":{
+         "code":265,
+         "message":"some error"
+      }
+   },
+   "responseType":{
+
+   },
+   "isError":true,
+   "httpError":0
+}

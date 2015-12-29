@@ -1,0 +1,18 @@
+{
+   "response":{
+      "login":{
+         "sessionKey":"valid sessionKey",
+         "type":2,
+         "isSuperAdmin":false,
+         "siteName":"JZ-Racer",
+         "mode":"nitro",
+         "version":"5.2",
+         "bucketed":false
+      }
+   },
+   "responseType":{
+
+   },
+   "isError":false,
+   "httpError":0
+}

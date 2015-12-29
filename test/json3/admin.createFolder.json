@@ -1,0 +1,21 @@
+{
+  "response":{
+    "folders":{
+      "folder":[
+        {
+          "id":0,
+          "name":"placeholder",
+          "type":"challenge",
+          "order":1,
+          "created":1450898116,
+          "clientId":"3138689|-370|8453090411298364"
+        }
+      ]
+    }
+  },
+  "responseType":{
+
+  },
+  "isError":false,
+  "httpError":0
+}

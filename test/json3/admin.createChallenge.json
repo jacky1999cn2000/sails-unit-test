@@ -1,0 +1,44 @@
+{
+  "response":{
+    "challenges":{
+      "challenge":[
+        {
+          "rules":{
+
+          },
+          "challengeRewards":{
+
+          },
+          "id":6241537,
+          "name":"challenge",
+          "activeFlag":1,
+          "callbackFlag":0,
+          "serviceType":"1",
+          "order":0,
+          "pointAward":0,
+          "dateIssued":"1450913643",
+          "applyMultiplier":0,
+          "repeatable":0,
+          "hideUntilEarned":0,
+          "tags":"",
+          "startTime":1450913643,
+          "endTime":0,
+          "ruleMatchType":0,
+          "prereqMatchType":"or",
+          "preferences":"",
+          "preferenceValues":"",
+          "preferencesMatchType":"or",
+          "groupFlag":0,
+          "groupPointAward":0,
+          "dailyAchievementLimit":0,
+          "version":"5.2"
+        }
+      ]
+    }
+  },
+  "responseType":{
+
+  },
+  "isError":false,
+  "httpError":0
+}

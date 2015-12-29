@@ -1,0 +1,14 @@
+{
+  "response":{
+    "deleteSuccess":{
+      "object":"Challenge",
+      "name":"test",
+      "id":6241537
+    }
+  },
+  "responseType":{
+
+  },
+  "isError":false,
+  "httpError":0
+}

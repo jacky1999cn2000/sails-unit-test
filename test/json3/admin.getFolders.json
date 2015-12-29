@@ -1,0 +1,40 @@
+{
+   "response":{
+      "folders":{
+        "folder":[
+          {
+            "id":3939713,
+            "name":"December-2015-Channel1-Distributor1",
+            "type": "challenge",
+            "order": 0,
+            "parentId":3939585
+          },
+          {
+            "id":3939585,
+            "name":"2015-Channel1-Distributor1",
+            "type": "challenge",
+            "order": 0,
+            "parentId":3939457
+          },
+          {
+            "id":3939457,
+            "name":"Channel1-Distributor1",
+            "type": "challenge",
+            "order": 0,
+            "parentId":3939329
+          },
+          {
+            "id":3939329,
+            "name":"Distributor1",
+            "type": "challenge",
+            "order": 0
+          }
+        ]
+      }
+   },
+   "responseType":{
+
+   },
+   "isError":false,
+   "httpError":0
+}

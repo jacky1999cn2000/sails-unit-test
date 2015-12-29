@@ -1,0 +1,27 @@
+{
+   "response":{
+      "pointCategories":{
+         "pointCategory":[
+            {
+               "id":3465857,
+               "clientId":"65555",
+               "name":"Points",
+               "premium":0,
+               "iconUrl":"",
+               "shortName":"",
+               "maxBalance":0,
+               "initialPoints":0,
+               "dailyMaxCredits":0,
+               "expirationFrequency":"never",
+               "isDefault":true,
+               "yearlyMaxCredits":0
+            }
+         ]
+      }
+   },
+   "responseType":{
+
+   },
+   "isError":false,
+   "httpError":0
+}

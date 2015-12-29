@@ -1,0 +1,29 @@
+{
+  "response":{
+    "rule":{
+      "metadata":{
+
+      },
+      "id":8301569,
+      "clientId":"3138689|739|8469929267139199",
+      "tagId":10078982785,
+      "actionTag":"SELL_VOLUME",
+      "operator":"EQ",
+      "description":"blah",
+      "goal":10,
+      "type":"sum",
+      "sortOrder":0,
+      "displayOrder":0,
+      "serviceType":"nitro",
+      "serviceActionType":"none",
+      "prereqRuleIds":"",
+      "prereqOperator":"or",
+      "itemName":"SELL_VOLUME"
+    }
+  },
+  "responseType":{
+
+  },
+  "isError":false,
+  "httpError":0
+}

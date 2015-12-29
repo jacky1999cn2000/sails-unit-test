@@ -1,0 +1,38 @@
+{
+    "challengeType": "sales",
+    "distributor": "Distributor1",
+    "channel": "Channel1",
+    "startDate": "1548928000",
+    "endDate": "1550137600",
+    "challengeName": "My awesome challenge",
+    "description": "My challenge description",
+    "points": 100,
+    "brandId": "233666",
+    "flavor": "cabernet sauvignon",
+    "upc": "22222",
+    "active": true,
+    "earlyStart": true,
+    "repeatable": true,
+    "tagName": "SELL_VOLUME",
+    "year": "2015",
+    "month": "December",
+    "blitz": true,
+    "distNumber": "1215",
+    "distType": "Retail",
+    "ruleOperator": "or",
+    "pointsPerCase": true,
+    "rule": [
+          {
+            "type": "count",
+            "goal": "1"
+          },
+          {
+            "type": "value",
+            "goal": "9"
+          },
+          {
+            "type": "count",
+            "goal": "1"
+          }
+    ]
+}
