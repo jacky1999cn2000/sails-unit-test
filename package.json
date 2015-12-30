@@ -1,0 +1,60 @@
+{
+  "name": "Gallo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Professional Services for E & J Gallo",
+  "keywords": [],
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "co": "^4.6.0",
+    "co-request": "^1.0.0",
+    "ejs": "~0.8.4",
+    "grunt": "0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-jst": "~0.6.0",
+    "grunt-contrib-less": "0.11.1",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sails-linker": "~0.9.5",
+    "grunt-sync": "~0.0.4",
+    "include-all": "~0.1.3",
+    "lodash": "^3.10.1",
+    "newrelic": "^1.24.0",
+    "q": "^1.4.1",
+    "rc": "~0.5.0",
+    "request": "^2.62.0",
+    "request-promise": "^1.0.2",
+    "request-promised": "^1.0.1",
+    "sails": "~0.11.0",
+    "sails-disk": "~0.10.0",
+    "sails-mysql": "^0.11.0"
+  },
+  "scripts": {
+    "start": "../build/enforce-precommit.sh && ./runLocal.sh",
+    "debug": "nodemon debug app.js",
+    "test": "mocha test/bootstrap.test.js test/unit/**/*.test.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://bitbucket.org/bunchball/ps_gallo.git"
+  },
+  "author": "bunchball",
+  "license": "Bunchball",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-as-promised": "^5.2.0",
+    "chai-spies": "^0.7.1",
+    "grunt-mocha-istanbul": "^3.0.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.3",
+    "mockery": "^1.4.0",
+    "nock": "^3.1.1",
+    "sinon": "^1.17.2",
+    "supertest": "^1.1.0"
+  }
+}
