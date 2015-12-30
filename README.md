@@ -6,9 +6,49 @@ sailsjs基本上自带了unit test的工具，详情见[这里](http://sailsjs.o
 
 ## 配置文件
 /test 目录下的bootstrap.test.js是用来为unit test做配置，是每次运行unit test时最先运行的文件。在此处sails进行lift，第一个参数是一个configuration object，在此可以传入environment使用的参数，本例中是unitTest。
+```
+before(function (done) {
+
+  this.timeout(40000);
+
+  Sails.lift({
+    // configuration for testing purposes
+    environment: 'unitTest'
+  }, function (err, server) {
+    sails = server;
+    if (err) return done(err);
+
+    process.env.NITRO_SECRET_KEY = "Unit";
+    process.env.NITRO_API_KEY = "Test";
+
+    // here you can load fixtures, etc.
+    done(err, sails);
+  });
+
+});
+```
 
 这个unitTest文件保存在config/env/目录下，里面定义了使用哪一个port，log的level是什么，数据库连接(unit test时一般使用sails-disk adapter)
+```
+module.exports = {
 
+  connections: {
+    unitTest: {
+      adapter: 'sails-disk'
+    }
+  },
+
+  port: 3002,
+
+  log: {
+    level: 'error'
+  },
+
+  models: {
+    connection: 'unitTest'
+  }
+};
+```
 ## 测试工具
 
 sails默认的测试framework是mocha，安装mocha即可以使用
