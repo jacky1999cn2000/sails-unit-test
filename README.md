@@ -55,7 +55,7 @@ sails默认的测试framework是mocha，安装mocha即可以使用
 
 本案例中使用的测试工具包括sinon,chai-as-promised,以及supertest；code coverage工具使用istanbul和grunt-mocha-istanbul
 
-*sinon* 主要是使用sinon.stub - 用来模拟某个函数的输出。API使用看[这里](http://sinonjs.org/)
+**sinon** 主要是使用sinon.stub - 用来模拟某个函数的输出。API使用看[这里](http://sinonjs.org/)
 ```
 var sinon = require('sinon');
 
@@ -68,7 +68,7 @@ afterEach(function(){
 });
 ```
 
-*chai-as-promised* 主要是用来做assersion，注意eventually的使用 - 如果被测试的函数返回值是promise，则加eventually，反之不加，具体看[这里](https://github.com/domenic/chai-as-promised/)。
+**chai-as-promised** 主要是用来做assersion，注意eventually的使用 - 如果被测试的函数返回值是promise，则加eventually，反之不加，具体看[这里](https://github.com/domenic/chai-as-promised/)。
 chai API使用看[这里](http://chaijs.com/)
 ```
 var chai = require('chai'),
@@ -88,7 +88,7 @@ it('should return correct option object', function() {
 });
 ```
 
-*supertest* 主要是用来测试controller，最上面sailsjs官方链接中有example。API使用看[这里](https://github.com/visionmedia/supertest)
+**supertest** 主要是用来测试controller，最上面sailsjs官方链接中有example。API使用看[这里](https://github.com/visionmedia/supertest)
 ```
 it('should return error if loginAdmin() returns error', function(done){
   ChallengeService.loginAdmin.restore();
@@ -105,7 +105,7 @@ it('should return error if loginAdmin() returns error', function(done){
 
 本案例在before()和after()方法中操作，具体看ChallengeController.test.js。另外注意区分before()与beforeEach(),after()与afterEach()的区别。
 
-_注意: javascript都是值引用，所以下面代码中当修改json file里数据的时候，要用 _.clone()，否则原json file中的值会被改变._
+_**注意:** javascript都是值引用，所以下面代码中当修改json file里数据的时候，要用 _.clone()，否则原json file中的值会被改变._
 ```
 describe('#update', function(){
   var body, updatebody, options, entry, id;
@@ -140,7 +140,7 @@ describe('#update', function(){
 }；
 ```
 
-*code coverage* 使用了istanbul和grunt-mocha-istanbul(见package.json)，添加了 tasks/register/test.js 和
+**code coverage** 使用了istanbul和grunt-mocha-istanbul(见package.json)，添加了 tasks/register/test.js 和
 tasks/config/mocha_istanbul.js 两个文件，然后在命令行中run: grunt test
 
 不是太熟悉grunt，但看起来先是register了一个名为'test'的task，然后这个task的dependency是名为'mocha_istanbul'的task，冒号后面姑且认为是参数。
